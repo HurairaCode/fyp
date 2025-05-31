@@ -1,14 +1,21 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 function SignUp() {
+
+
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         password: '',
         terms: false
     });
+    
 
+
+    
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value, type, checked } = e.target;
         setFormData(prev => ({
@@ -18,8 +25,10 @@ function SignUp() {
     };
 
     const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Handle signup logic here
+           const { data, error } = await supabase.auth.signUp({
+  email: 'example@email.com',
+  password: 'example-password',
+})
     };
 
     return (
