@@ -97,7 +97,7 @@ function SignUp() {
               required
             />
             <label className="ml-2 text-sm text-gray-300">
-               to the terms & policy
+              Tearm to the terms & policy
             </label>
           </div>
 
