@@ -97,7 +97,7 @@ function SignUp() {
               required
             />
             <label className="ml-2 text-sm text-gray-300">
-              I agree to the terms & policy
+               to the terms & policy
             </label>
           </div>
 
